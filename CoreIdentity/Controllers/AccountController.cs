@@ -14,6 +14,7 @@ namespace CoreIdentity.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly ApplicationDbContext _dbContext;
+        private readonly RoleManager<ApplicationRole> _roleManager;
 
         //Dependency Injection
         public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, ApplicationDbContext dbContext)
